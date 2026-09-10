@@ -1,0 +1,26 @@
+<svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="170" cy="266" rx="120" ry="14" fill="#0f2119" opacity="0.35"/>
+
+  <!-- ticket -->
+  <g transform="rotate(5 170 150)">
+    <path d="M70 90 h200 a16 16 0 0 1 16 16 v16 a16 16 0 0 0 0 32 v16 a16 16 0 0 1 -16 16 h-200 a16 16 0 0 1 -16 -16 v-16 a16 16 0 0 0 0 -32 v-16 a16 16 0 0 1 16 -16 z"
+          fill="#f6efdd" stroke="#e7dcbd" stroke-width="2"/>
+    <line x1="210" y1="98" x2="210" y2="202" stroke="#d9cba1" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <text x="96" y="140" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#1c3f30">EventHub</text>
+    <rect x="96" y="154" width="90" height="8" rx="4" fill="#d9cba1"/>
+    <rect x="96" y="172" width="60" height="8" rx="4" fill="#d9cba1"/>
+
+    <g transform="translate(232 118) rotate(-90)">
+      <text x="0" y="0" font-family="Inter, sans-serif" font-size="11" letter-spacing="3" fill="#2d5745">ADMIT ONE</text>
+    </g>
+  </g>
+
+  <!-- confetti -->
+  <rect x="54" y="70" width="12" height="12" rx="3" fill="#e2883a" transform="rotate(18 60 76)"/>
+  <rect x="270" y="200" width="12" height="12" rx="3" fill="#2d5745" transform="rotate(-12 276 206)"/>
+  <circle cx="284" cy="86" r="7" fill="#f6efdd"/>
+  <circle cx="46" cy="212" r="6" fill="#e2883a"/>
+  <path d="M250 60 l6 12 -12 -2z" fill="#f6efdd"/>
+  <path d="M64 236 l10 4 -4 10z" fill="#e2883a"/>
+</svg>

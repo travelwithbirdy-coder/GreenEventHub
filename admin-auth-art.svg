@@ -1,0 +1,40 @@
+<svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="170" cy="266" rx="120" ry="14" fill="#0f2119" opacity="0.35"/>
+
+  <!-- clipboard body -->
+  <g transform="rotate(-4 170 150)">
+    <rect x="78" y="46" width="184" height="220" rx="14" fill="#f6efdd" stroke="#e7dcbd" stroke-width="2"/>
+    <rect x="140" y="34" width="60" height="26" rx="8" fill="#e2883a"/>
+    <rect x="150" y="40" width="40" height="14" rx="5" fill="#f6efdd"/>
+
+    <!-- checklist lines -->
+    <g stroke-linecap="round">
+      <rect x="100" y="90" width="18" height="18" rx="5" fill="none" stroke="#1c3f30" stroke-width="3"/>
+      <path d="M104 99l4 5 8-9" fill="none" stroke="#1c3f30" stroke-width="3"/>
+      <rect x="128" y="94" width="98" height="8" rx="4" fill="#d9cba1"/>
+
+      <rect x="100" y="128" width="18" height="18" rx="5" fill="none" stroke="#1c3f30" stroke-width="3"/>
+      <path d="M104 137l4 5 8-9" fill="none" stroke="#1c3f30" stroke-width="3"/>
+      <rect x="128" y="132" width="118" height="8" rx="4" fill="#d9cba1"/>
+
+      <rect x="100" y="166" width="18" height="18" rx="5" fill="none" stroke="#c9754c" stroke-width="3"/>
+      <rect x="128" y="170" width="80" height="8" rx="4" fill="#d9cba1"/>
+    </g>
+
+    <!-- little bar chart -->
+    <g transform="translate(100 200)">
+      <rect x="0" y="34" width="18" height="26" rx="3" fill="#2d5745"/>
+      <rect x="26" y="18" width="18" height="42" rx="3" fill="#e2883a"/>
+      <rect x="52" y="26" width="18" height="34" rx="3" fill="#2d5745"/>
+      <rect x="78" y="6" width="18" height="54" rx="3" fill="#2d5745"/>
+      <rect x="104" y="30" width="18" height="30" rx="3" fill="#e2883a"/>
+      <line x1="-6" y1="60" x2="128" y2="60" stroke="#c9bd97" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- floating dots -->
+  <circle cx="60" cy="90" r="6" fill="#e2883a"/>
+  <circle cx="286" cy="120" r="5" fill="#f6efdd"/>
+  <circle cx="272" cy="210" r="8" fill="#2d5745" stroke="#f6efdd" stroke-width="2"/>
+  <circle cx="52" cy="196" r="4" fill="#f6efdd"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg">
+  <!-- calendar -->
+  <g transform="translate(120 60)">
+    <rect x="0" y="20" width="220" height="200" rx="18" fill="#f6efdd" stroke="#e7dcbd" stroke-width="2"/>
+    <rect x="0" y="20" width="220" height="46" rx="18" fill="#1c3f30"/>
+    <rect x="0" y="48" width="220" height="18" fill="#1c3f30"/>
+    <rect x="30" y="0" width="14" height="40" rx="7" fill="#e2883a"/>
+    <rect x="176" y="0" width="14" height="40" rx="7" fill="#e2883a"/>
+
+    <g fill="#d9cba1">
+      <rect x="24" y="90" width="26" height="26" rx="6"/>
+      <rect x="62" y="90" width="26" height="26" rx="6"/>
+      <rect x="100" y="90" width="26" height="26" rx="6"/>
+      <rect x="138" y="90" width="26" height="26" rx="6"/>
+      <rect x="176" y="90" width="26" height="26" rx="6"/>
+
+      <rect x="24" y="128" width="26" height="26" rx="6"/>
+      <rect x="62" y="128" width="26" height="26" rx="6"/>
+      <rect x="138" y="128" width="26" height="26" rx="6"/>
+      <rect x="176" y="128" width="26" height="26" rx="6"/>
+
+      <rect x="24" y="166" width="26" height="26" rx="6"/>
+      <rect x="62" y="166" width="26" height="26" rx="6"/>
+      <rect x="100" y="166" width="26" height="26" rx="6"/>
+    </g>
+    <rect x="100" y="128" width="26" height="26" rx="6" fill="#e2883a"/>
+  </g>
+
+  <!-- ticket, tilted, overlapping bottom left -->
+  <g transform="translate(20 240) rotate(-10)">
+    <path d="M0 20 h150 a12 12 0 0 1 12 12 v12 a12 12 0 0 0 0 24 v12 a12 12 0 0 1 -12 12 h-150 a12 12 0 0 1 -12 -12 v-12 a12 12 0 0 0 0 -24 v-12 a12 12 0 0 1 12 -12 z"
+          fill="#2d5745"/>
+    <line x1="118" y1="26" x2="118" y2="90" stroke="#3f6d59" stroke-width="2" stroke-dasharray="5 5"/>
+    <rect x="18" y="42" width="80" height="8" rx="4" fill="#f6efdd"/>
+    <rect x="18" y="58" width="56" height="8" rx="4" fill="#7fa593"/>
+  </g>
+
+  <!-- confetti scatter -->
+  <circle cx="90" cy="60" r="8" fill="#e2883a"/>
+  <circle cx="380" cy="90" r="10" fill="#f6efdd" stroke="#1c3f30" stroke-width="2"/>
+  <rect x="360" y="220" width="16" height="16" rx="4" fill="#2d5745" transform="rotate(20 368 228)"/>
+  <rect x="60" y="180" width="14" height="14" rx="4" fill="#e2883a" transform="rotate(-15 67 187)"/>
+  <path d="M400 300 l8 16 -16 -3z" fill="#e2883a"/>
+  <path d="M340 40 l12 5 -5 12z" fill="#2d5745"/>
+  <circle cx="420" cy="180" r="6" fill="#2d5745"/>
+</svg>
