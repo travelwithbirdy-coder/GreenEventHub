@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Categories — NSBM EventHub Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="siteHeader">
+  <div class="siteHeaderInner">
+    <a href="admin-dashboard.html" class="brandMark">Event<span>Hub</span> <span style="font-size:0.6rem;color:var(--teal-dark);font-weight:600;">ADMIN</span></a>
+    <nav class="mainNav">
+      <span class="navUserPill" id="adminNavPill"></span>
+      <a href="#" onclick="logoutAdmin(); return false;">Log out</a>
+    </nav>
+  </div>
+</header>
+
+<div class="adminShell">
+  <aside class="adminSidebar">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="admin-events.html">Events</a>
+    <a href="admin-categories.html" class="navActive">Categories</a>
+    <a href="admin-registrations.html">Registrations</a>
+    <a href="admin-announcements.html">Announcements</a>
+  </aside>
+
+  <main class="adminMain">
+    <div class="sectionHead">
+      <div>
+        <h1 style="font-size:1.8rem;">Categories</h1>
+        <p>Group events so students can filter by the kind of thing they're into.</p>
+      </div>
+    </div>
+
+    <form id="addCategoryForm" class="formCard" style="display:flex;flex-direction:row;gap:10px;align-items:flex-end;max-width:520px;margin-bottom:28px;padding:20px;">
+      <div class="formRow" style="flex:1;margin-bottom:0;">
+        <label for="newCategoryName">New category name</label>
+        <input type="text" id="newCategoryName" placeholder="e.g. Music & Arts">
+      </div>
+      <button type="submit" class="btn btnPrimary">Add</button>
+    </form>
+
+    <div class="adminTableWrap" style="max-width:640px;">
+      <table class="adminTable">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Used by</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="categoryTableBody"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/admin.js"></script>
+<script>
+  initAdminCategoriesPage();
+</script>
+</body>
+</html>

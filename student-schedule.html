@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Schedule — NSBM EventHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="siteHeader">
+  <div class="siteHeaderInner">
+    <a href="index.html" class="brandMark">Event<span>Hub</span></a>
+    <nav class="mainNav">
+      <a href="student-dashboard.html">Browse Events</a>
+      <a href="student-schedule.html" class="navActive">My Schedule</a>
+      <a href="student-announcements.html">Announcements</a>
+      <span class="navUserPill" id="studentNavPill"></span>
+      <a href="#" onclick="logoutStudent(); return false;">Log out</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pageBody">
+  <div class="pageWrap">
+    <div class="sectionHead">
+      <div>
+        <h1 style="font-size:2rem;">My schedule</h1>
+        <p>Every event you've registered for, in order of date.</p>
+      </div>
+    </div>
+
+    <div id="scheduleEmpty" class="emptyState" style="display:none;">
+      <p class="mt0">You haven't registered for any events yet.</p>
+      <a class="btn btnPrimary" href="student-dashboard.html">Browse events</a>
+    </div>
+    <div id="scheduleList" style="max-width:620px;"></div>
+  </div>
+</main>
+
+<footer class="siteFooter">
+  <div class="pageWrap">NSBM EventHub — Faculty of Computing, WAD project.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/student.js"></script>
+<script>
+  renderMySchedule();
+</script>
+</body>
+</html>

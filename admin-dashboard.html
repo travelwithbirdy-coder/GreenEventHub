@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — NSBM EventHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="siteHeader">
+  <div class="siteHeaderInner">
+    <a href="admin-dashboard.html" class="brandMark">Event<span>Hub</span> <span style="font-size:0.6rem;color:var(--teal-dark);font-weight:600;">ADMIN</span></a>
+    <nav class="mainNav">
+      <span class="navUserPill" id="adminNavPill"></span>
+      <a href="#" onclick="logoutAdmin(); return false;">Log out</a>
+    </nav>
+  </div>
+</header>
+
+<div class="adminShell">
+  <aside class="adminSidebar">
+    <a href="admin-dashboard.html" class="navActive">Dashboard</a>
+    <a href="admin-events.html">Events</a>
+    <a href="admin-categories.html">Categories</a>
+    <a href="admin-registrations.html">Registrations</a>
+    <a href="admin-announcements.html">Announcements</a>
+  </aside>
+
+  <main class="adminMain">
+    <div class="sectionHead">
+      <div>
+        <h1 style="font-size:1.8rem;">Dashboard</h1>
+        <p>A quick look at what's happening across EventHub.</p>
+      </div>
+    </div>
+
+    <div class="statGrid">
+      <div class="statCard">
+        <div class="statNum" id="statTotalEvents">0</div>
+        <div class="statLabel">Active events</div>
+      </div>
+      <div class="statCard">
+        <div class="statNum" id="statTotalCategories">0</div>
+        <div class="statLabel">Categories</div>
+      </div>
+      <div class="statCard">
+        <div class="statNum" id="statTotalRegistrations">0</div>
+        <div class="statLabel">Total registrations</div>
+      </div>
+      <div class="statCard">
+        <div class="statNum" id="statTotalStudents">0</div>
+        <div class="statLabel">Registered students</div>
+      </div>
+    </div>
+
+    <h2 style="font-size:1.3rem;">Coming up next</h2>
+    <div id="upcomingEventsList" style="max-width:560px;"></div>
+  </main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/admin.js"></script>
+<script>
+  renderAdminDashboard();
+</script>
+</body>
+</html>
